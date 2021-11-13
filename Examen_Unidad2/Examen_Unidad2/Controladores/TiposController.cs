@@ -121,6 +121,7 @@ namespace Examen_Unidad2.Controladores
             vista.CancelarButton.Enabled = true;
             vista.ModificarButton.Enabled = false;
             vista.NuevoButton.Enabled = false;
+            vista.EliminarButton.Enabled = false;
         }
         private void DesabilitarControles()
         {
@@ -131,6 +132,7 @@ namespace Examen_Unidad2.Controladores
             vista.CancelarButton.Enabled = false;
             vista.ModificarButton.Enabled = true;
             vista.NuevoButton.Enabled = true;
+            vista.EliminarButton.Enabled = true;
         }
         private void LimpiarControles()
         {

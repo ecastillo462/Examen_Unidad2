@@ -40,10 +40,10 @@ namespace Examen_Unidad2.Vistas
             this.RegistroEstadosToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.GenerarTicketToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx4 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.DetallesToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
@@ -82,7 +82,7 @@ namespace Examen_Unidad2.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.RegistroEstadosToolStripTabItem;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem4;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(788, 125);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -202,7 +202,7 @@ namespace Examen_Unidad2.Vistas
             this.toolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx3.Image = null;
             this.toolStripEx3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton3});
+            this.GenerarTicketToolStripButton});
             this.toolStripEx3.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx3.Name = "toolStripEx3";
             this.toolStripEx3.Office12Mode = false;
@@ -211,13 +211,14 @@ namespace Examen_Unidad2.Vistas
             this.toolStripEx3.Size = new System.Drawing.Size(220, 59);
             this.toolStripEx3.TabIndex = 0;
             // 
-            // toolStripButton3
+            // GenerarTicketToolStripButton
             // 
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(140, 35);
-            this.toolStripButton3.Text = "Generar ticket";
+            this.GenerarTicketToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("GenerarTicketToolStripButton.Image")));
+            this.GenerarTicketToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.GenerarTicketToolStripButton.Name = "GenerarTicketToolStripButton";
+            this.GenerarTicketToolStripButton.Size = new System.Drawing.Size(140, 35);
+            this.GenerarTicketToolStripButton.Text = "Generar ticket";
+            this.GenerarTicketToolStripButton.Click += new System.EventHandler(this.GenerarTicketToolStripButton_Click);
             // 
             // toolStripTabItem4
             // 
@@ -244,7 +245,7 @@ namespace Examen_Unidad2.Vistas
             this.toolStripEx4.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx4.Image = null;
             this.toolStripEx4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton4});
+            this.DetallesToolStripButton});
             this.toolStripEx4.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx4.Name = "toolStripEx4";
             this.toolStripEx4.Office12Mode = false;
@@ -253,13 +254,14 @@ namespace Examen_Unidad2.Vistas
             this.toolStripEx4.Size = new System.Drawing.Size(220, 59);
             this.toolStripEx4.TabIndex = 0;
             // 
-            // toolStripButton4
+            // DetallesToolStripButton
             // 
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(156, 35);
-            this.toolStripButton4.Text = "Lista de tickets";
+            this.DetallesToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DetallesToolStripButton.Image")));
+            this.DetallesToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.DetallesToolStripButton.Name = "DetallesToolStripButton";
+            this.DetallesToolStripButton.Size = new System.Drawing.Size(156, 35);
+            this.DetallesToolStripButton.Text = "Lista de tickets";
+            this.DetallesToolStripButton.Click += new System.EventHandler(this.DetallesToolStripButton_Click);
             // 
             // tabbedMDIManager1
             // 
@@ -316,10 +318,10 @@ namespace Examen_Unidad2.Vistas
         private System.Windows.Forms.ToolStripButton RegistroEstadosToolStripButton;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem3;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx3;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton GenerarTicketToolStripButton;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem4;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx4;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton DetallesToolStripButton;
         private Syncfusion.Windows.Forms.Tools.TabbedMDIManager tabbedMDIManager1;
     }
 }

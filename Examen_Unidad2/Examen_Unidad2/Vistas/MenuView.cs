@@ -16,6 +16,8 @@ namespace Examen_Unidad2.Vistas
         }
         TiposView vistaTipos;
         EstadosView vistaEstados;
+        TicketsView vistaTickests;
+        DetallesView vistaDetalles;
         private void RegistroTiposToolStripButton_Click(object sender, EventArgs e)
         {
             if (vistaTipos == null)
@@ -51,6 +53,42 @@ namespace Examen_Unidad2.Vistas
         private void VistaEstados_FormClosed(object sender, FormClosedEventArgs e)
         {
             vistaEstados = null;
+        }
+        private void GenerarTicketToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaTickests == null)
+            {
+                vistaTickests = new TicketsView();
+                vistaTickests.MdiParent = this;
+                vistaTickests.FormClosed += VistaTickests_FormClosed;
+                vistaTickests.Show();
+            }
+            else
+            {
+                vistaTickests.Activate();
+            }
+        }
+        private void VistaTickests_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaTickests = null;
+        }
+        private void DetallesToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaTipos == null)
+            {
+                vistaDetalles = new DetallesView();
+                vistaDetalles.MdiParent = this;
+                vistaDetalles.FormClosed += VistaDetalles_FormClosed;
+                vistaDetalles.Show();
+            }
+            else
+            {
+                vistaDetalles.Activate();
+            }
+        }
+        private void VistaDetalles_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaDetalles = null;
         }
     }
 }
