@@ -25,6 +25,7 @@ namespace Examen_Unidad2.Controladores
             vista.Load += new EventHandler(Load);
             vista.ModificarButton.Click += new EventHandler(Modificar);
             vista.EliminarButton.Click += new EventHandler(Eliminar);
+            vista.CancelarButton.Click += new EventHandler(Cancelar);
         }
         private void Nuevo(object serder, EventArgs e)
         {
@@ -55,7 +56,7 @@ namespace Examen_Unidad2.Controladores
             }
 
             tickets.NombreCliente = vista.NombreClienteTextBox.Text;
-            tickets.FechaInicio = DateTime.Now;
+            tickets.FechaInicio = vista.FechaInicioDateTimePicker.Value;
             tickets.FechaFinalizacion = vista.FechaFinalizacionDateTimePicker.Value;
             tickets.TipoSoporte = vista.TipoSoporteComboBox.Text;
             tickets.EstadoTicket = vista.EstadoTicketComboBox.Text;
@@ -68,9 +69,9 @@ namespace Examen_Unidad2.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
+                    ListarTickets();
                     MessageBox.Show("Nuevo ticket registrado exitosamente ", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarTickets();
                 }
                 else
                 {
@@ -86,10 +87,9 @@ namespace Examen_Unidad2.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
-
+                    ListarTickets();
                     MessageBox.Show("Ticket modificado Exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarTickets();
                 }
                 else
                 {
@@ -101,9 +101,7 @@ namespace Examen_Unidad2.Controladores
         }
         private void Load(object sender, EventArgs e)
         {
-            ListarTipos();
-            ListarTipos();
-            ListarEstados();
+            ListarTickets();
         }
         private void Modificar(object serder, EventArgs e)
         {
@@ -128,17 +126,23 @@ namespace Examen_Unidad2.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
-
+                    ListarTickets();
                     MessageBox.Show("Ticket eliminado exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
                     vista.TicketsDataGridView.DataSource = "";
                 }
             }
         }
+        private void Cancelar(object serder, EventArgs e)
+        {
+            LimpiarControles();
+            DesabilitarControles();
+        }
         private void HabilitarControles()
         {
             vista.IdTextBox.Enabled = true;
             vista.NombreClienteTextBox.Enabled = true;
+            vista.FechaInicioDateTimePicker.Enabled = true;
             vista.FechaFinalizacionDateTimePicker.Enabled = true;
             vista.TipoSoporteComboBox.Enabled = true;
             vista.EstadoTicketComboBox.Enabled = true;
@@ -154,6 +158,7 @@ namespace Examen_Unidad2.Controladores
         {
             vista.IdTextBox.Enabled = false;
             vista.NombreClienteTextBox.Enabled = false;
+            vista.FechaInicioDateTimePicker.Enabled = false;
             vista.FechaFinalizacionDateTimePicker.Enabled = false;
             vista.TipoSoporteComboBox.Enabled = false;
             vista.EstadoTicketComboBox.Enabled = false;

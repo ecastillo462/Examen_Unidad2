@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examen_Unidad2.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Examen_Unidad2.Vistas
         public DetallesView()
         {
             InitializeComponent();
+            DetallesController controlador = new DetallesController(this);
         }
     }
 }

@@ -87,8 +87,7 @@ namespace Examen_Unidad2.Modelos.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" SELECT TOP(1) * FROM TICKETS ");
-                sql.Append(" ORDER BY ID DESC ");
+                sql.Append(" SELECT * FROM TICKETS ");
                 comando.Connection = MiConexion;
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;

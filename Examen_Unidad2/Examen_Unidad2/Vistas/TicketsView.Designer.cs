@@ -44,6 +44,7 @@ namespace Examen_Unidad2.Vistas
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.EstadoTicketComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.EliminarButton = new System.Windows.Forms.Button();
             this.CancelarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.ModificarButton = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@ namespace Examen_Unidad2.Vistas
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.TicketsDataGridView = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.EliminarButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -201,6 +201,15 @@ namespace Examen_Unidad2.Vistas
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Botones";
             // 
+            // EliminarButton
+            // 
+            this.EliminarButton.Location = new System.Drawing.Point(466, 28);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(125, 30);
+            this.EliminarButton.TabIndex = 14;
+            this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.UseVisualStyleBackColor = true;
+            // 
             // CancelarButton
             // 
             this.CancelarButton.Enabled = false;
@@ -241,6 +250,9 @@ namespace Examen_Unidad2.Vistas
             // 
             // groupBox5
             // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.TicketsDataGridView);
             this.groupBox5.Location = new System.Drawing.Point(12, 430);
             this.groupBox5.Name = "groupBox5";
@@ -264,15 +276,6 @@ namespace Examen_Unidad2.Vistas
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // EliminarButton
-            // 
-            this.EliminarButton.Location = new System.Drawing.Point(466, 28);
-            this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(125, 30);
-            this.EliminarButton.TabIndex = 14;
-            this.EliminarButton.Text = "Eliminar";
-            this.EliminarButton.UseVisualStyleBackColor = true;
             // 
             // TicketsView
             // 

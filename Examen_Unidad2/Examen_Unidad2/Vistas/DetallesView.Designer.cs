@@ -32,10 +32,8 @@ namespace Examen_Unidad2.Vistas
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.TicketsDataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.CancelarButton = new System.Windows.Forms.Button();
+            this.SalirButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
-            this.GuardarButton = new System.Windows.Forms.Button();
-            this.ModificarButton = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TicketsDataGridView)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -43,75 +41,60 @@ namespace Examen_Unidad2.Vistas
             // 
             // groupBox5
             // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.TicketsDataGridView);
             this.groupBox5.Location = new System.Drawing.Point(20, 19);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.groupBox5.Size = new System.Drawing.Size(1000, 323);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(5);
+            this.groupBox5.Size = new System.Drawing.Size(1150, 588);
             this.groupBox5.TabIndex = 9;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Lista de tickets";
             // 
             // TicketsDataGridView
             // 
+            this.TicketsDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TicketsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.TicketsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TicketsDataGridView.Location = new System.Drawing.Point(10, 32);
-            this.TicketsDataGridView.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TicketsDataGridView.Margin = new System.Windows.Forms.Padding(5);
             this.TicketsDataGridView.Name = "TicketsDataGridView";
-            this.TicketsDataGridView.Size = new System.Drawing.Size(980, 268);
+            this.TicketsDataGridView.Size = new System.Drawing.Size(1100, 546);
             this.TicketsDataGridView.TabIndex = 0;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.CancelarButton);
+            this.groupBox4.Controls.Add(this.SalirButton);
             this.groupBox4.Controls.Add(this.EliminarButton);
-            this.groupBox4.Controls.Add(this.GuardarButton);
-            this.groupBox4.Controls.Add(this.ModificarButton);
-            this.groupBox4.Location = new System.Drawing.Point(20, 350);
+            this.groupBox4.Location = new System.Drawing.Point(20, 615);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(595, 100);
+            this.groupBox4.Size = new System.Drawing.Size(292, 100);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Datos";
+            this.groupBox4.Text = "Botones";
             // 
-            // CancelarButton
+            // SalirButton
             // 
-            this.CancelarButton.Enabled = false;
-            this.CancelarButton.Location = new System.Drawing.Point(462, 27);
-            this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(125, 30);
-            this.CancelarButton.TabIndex = 13;
-            this.CancelarButton.Text = "Cancelar";
-            this.CancelarButton.UseVisualStyleBackColor = true;
+            this.SalirButton.Location = new System.Drawing.Point(158, 28);
+            this.SalirButton.Name = "SalirButton";
+            this.SalirButton.Size = new System.Drawing.Size(125, 30);
+            this.SalirButton.TabIndex = 13;
+            this.SalirButton.Text = "Salir";
+            this.SalirButton.UseVisualStyleBackColor = true;
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Location = new System.Drawing.Point(310, 27);
+            this.EliminarButton.Location = new System.Drawing.Point(6, 28);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(125, 30);
             this.EliminarButton.TabIndex = 12;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
-            // 
-            // GuardarButton
-            // 
-            this.GuardarButton.Enabled = false;
-            this.GuardarButton.Location = new System.Drawing.Point(158, 28);
-            this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(125, 30);
-            this.GuardarButton.TabIndex = 11;
-            this.GuardarButton.Text = "Guardar";
-            this.GuardarButton.UseVisualStyleBackColor = true;
-            // 
-            // ModificarButton
-            // 
-            this.ModificarButton.Location = new System.Drawing.Point(6, 28);
-            this.ModificarButton.Name = "ModificarButton";
-            this.ModificarButton.Size = new System.Drawing.Size(125, 30);
-            this.ModificarButton.TabIndex = 10;
-            this.ModificarButton.Text = "Modificar";
-            this.ModificarButton.UseVisualStyleBackColor = true;
             // 
             // DetallesView
             // 
@@ -121,7 +104,7 @@ namespace Examen_Unidad2.Vistas
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox5);
             this.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "DetallesView";
             this.Text = "DetallesView";
             this.groupBox5.ResumeLayout(false);
@@ -136,9 +119,7 @@ namespace Examen_Unidad2.Vistas
         private System.Windows.Forms.GroupBox groupBox5;
         public System.Windows.Forms.DataGridView TicketsDataGridView;
         private System.Windows.Forms.GroupBox groupBox4;
-        public System.Windows.Forms.Button CancelarButton;
+        public System.Windows.Forms.Button SalirButton;
         public System.Windows.Forms.Button EliminarButton;
-        public System.Windows.Forms.Button GuardarButton;
-        public System.Windows.Forms.Button ModificarButton;
     }
 }

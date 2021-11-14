@@ -18,8 +18,8 @@ namespace Examen_Unidad2.Controladores
         {
             vista = view;
             vista.AceptarButton.Click += new EventHandler(ValidarUsuario);
+            vista.CancelarButton.Click += new EventHandler(Cancelar);
         }
-
         private void ValidarUsuario(object serder, EventArgs e)
         {
             bool esValido = false;
@@ -32,6 +32,7 @@ namespace Examen_Unidad2.Controladores
             esValido = userDao.ValidarUsuario(user);
             if (esValido)
             {
+                MessageBox.Show("Usuario Correcto");
                 MenuView menu = new MenuView();
                 vista.Hide();
                 menu.Show();
@@ -41,6 +42,10 @@ namespace Examen_Unidad2.Controladores
                 MessageBox.Show("Usuario Incorrecto");
             }
         }
+        private void Cancelar(object serder, EventArgs e)
+        {
+            LimpiarControles();
+        }   
         public static string EncriptarClave(string str)
         {
             string cadena = str + "MiClavePersonal";
@@ -51,6 +56,11 @@ namespace Examen_Unidad2.Controladores
             stream = sha256.ComputeHash(encoding.GetBytes(cadena));
             for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
             return sb.ToString();
+        }
+        private void LimpiarControles()
+        {
+            vista.EmailTextBox.Clear();
+            vista.ClaveTextBox.Clear();
         }
 
     }

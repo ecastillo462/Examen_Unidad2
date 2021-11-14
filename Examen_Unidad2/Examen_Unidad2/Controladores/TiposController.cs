@@ -16,7 +16,6 @@ namespace Examen_Unidad2.Controladores
         TiposDAO tiposDAO = new TiposDAO();
         Tipos tipos = new Tipos();
         string operacion = string.Empty;
-
         public TiposController(TiposView view)
         {
             vista = view;
@@ -25,6 +24,7 @@ namespace Examen_Unidad2.Controladores
             vista.Load += new EventHandler(Load);
             vista.ModificarButton.Click += new EventHandler(Modificar);
             vista.EliminarButton.Click += new EventHandler(Eliminar);
+            vista.CancelarButton.Click += new EventHandler(Cancelar);
         }
         private void Nuevo(object serder, EventArgs e)
         {
@@ -49,9 +49,9 @@ namespace Examen_Unidad2.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
+                    ListarTipos();
                     MessageBox.Show("Nuevo tipo de soporte registrado exitosamente ", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarTipos();
                 }
                 else
                 {
@@ -67,10 +67,10 @@ namespace Examen_Unidad2.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
-
+                    ListarTipos();
                     MessageBox.Show("Tipo de soporte modificado Exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarTipos();
+
                 }
                 else
                 {
@@ -105,12 +105,16 @@ namespace Examen_Unidad2.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
-
+                    ListarTipos();
                     MessageBox.Show("Tipo de soporte eliminado exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarTipos();
                 }
             }
+        }
+        private void Cancelar(object serder, EventArgs e)
+        {
+            LimpiarControles();
+            DesabilitarControles();
         }
         private void HabilitarControles()
         {

@@ -34,17 +34,17 @@ namespace Examen_Unidad2.Vistas
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.RegistroTiposToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.RegistroEstadosToolStripTabItem = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.RegistroEstadosToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.GenerarTicketToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx4 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.DetallesToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
+            this.RegistroTiposToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.RegistroEstadosToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.GenerarTicketToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.DetallesToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
@@ -90,6 +90,7 @@ namespace Examen_Unidad2.Vistas
             this.ribbonControlAdv1.TabIndex = 1;
             this.ribbonControlAdv1.Text = "ribbonControlAdv1";
             this.ribbonControlAdv1.ThemeName = "Office2016";
+            this.ribbonControlAdv1.ThemeStyle.MoreCommandsStyle.PropertyGridViewBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             // 
             // toolStripTabItem1
             // 
@@ -103,7 +104,7 @@ namespace Examen_Unidad2.Vistas
             this.toolStripTabItem1.Panel.TabIndex = 2;
             this.toolStripTabItem1.Panel.Text = "Tipos";
             this.toolStripTabItem1.Position = 0;
-            this.toolStripTabItem1.Size = new System.Drawing.Size(64, 30);
+            this.toolStripTabItem1.Size = new System.Drawing.Size(54, 23);
             this.toolStripTabItem1.Tag = "1";
             this.toolStripTabItem1.Text = "Tipos";
             // 
@@ -125,15 +126,6 @@ namespace Examen_Unidad2.Vistas
             this.toolStripEx1.Size = new System.Drawing.Size(220, 59);
             this.toolStripEx1.TabIndex = 0;
             // 
-            // RegistroTiposToolStripButton
-            // 
-            this.RegistroTiposToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("RegistroTiposToolStripButton.Image")));
-            this.RegistroTiposToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.RegistroTiposToolStripButton.Name = "RegistroTiposToolStripButton";
-            this.RegistroTiposToolStripButton.Size = new System.Drawing.Size(164, 35);
-            this.RegistroTiposToolStripButton.Text = "Registro de tipos";
-            this.RegistroTiposToolStripButton.Click += new System.EventHandler(this.RegistroTiposToolStripButton_Click);
-            // 
             // RegistroEstadosToolStripTabItem
             // 
             this.RegistroEstadosToolStripTabItem.Name = "RegistroEstadosToolStripTabItem";
@@ -146,7 +138,7 @@ namespace Examen_Unidad2.Vistas
             this.RegistroEstadosToolStripTabItem.Panel.TabIndex = 3;
             this.RegistroEstadosToolStripTabItem.Panel.Text = "Estados";
             this.RegistroEstadosToolStripTabItem.Position = 1;
-            this.RegistroEstadosToolStripTabItem.Size = new System.Drawing.Size(80, 30);
+            this.RegistroEstadosToolStripTabItem.Size = new System.Drawing.Size(70, 23);
             this.RegistroEstadosToolStripTabItem.Tag = "2";
             this.RegistroEstadosToolStripTabItem.Text = "Estados";
             // 
@@ -168,15 +160,6 @@ namespace Examen_Unidad2.Vistas
             this.toolStripEx2.Size = new System.Drawing.Size(220, 59);
             this.toolStripEx2.TabIndex = 0;
             // 
-            // RegistroEstadosToolStripButton
-            // 
-            this.RegistroEstadosToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("RegistroEstadosToolStripButton.Image")));
-            this.RegistroEstadosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.RegistroEstadosToolStripButton.Name = "RegistroEstadosToolStripButton";
-            this.RegistroEstadosToolStripButton.Size = new System.Drawing.Size(180, 35);
-            this.RegistroEstadosToolStripButton.Text = "Registro de estados";
-            this.RegistroEstadosToolStripButton.Click += new System.EventHandler(this.RegistroEstadosToolStripButton_Click);
-            // 
             // toolStripTabItem3
             // 
             this.toolStripTabItem3.Name = "toolStripTabItem3";
@@ -189,7 +172,7 @@ namespace Examen_Unidad2.Vistas
             this.toolStripTabItem3.Panel.TabIndex = 4;
             this.toolStripTabItem3.Panel.Text = "Tickets";
             this.toolStripTabItem3.Position = 2;
-            this.toolStripTabItem3.Size = new System.Drawing.Size(80, 30);
+            this.toolStripTabItem3.Size = new System.Drawing.Size(70, 23);
             this.toolStripTabItem3.Tag = "3";
             this.toolStripTabItem3.Text = "Tickets";
             // 
@@ -211,15 +194,6 @@ namespace Examen_Unidad2.Vistas
             this.toolStripEx3.Size = new System.Drawing.Size(220, 59);
             this.toolStripEx3.TabIndex = 0;
             // 
-            // GenerarTicketToolStripButton
-            // 
-            this.GenerarTicketToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("GenerarTicketToolStripButton.Image")));
-            this.GenerarTicketToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.GenerarTicketToolStripButton.Name = "GenerarTicketToolStripButton";
-            this.GenerarTicketToolStripButton.Size = new System.Drawing.Size(140, 35);
-            this.GenerarTicketToolStripButton.Text = "Generar ticket";
-            this.GenerarTicketToolStripButton.Click += new System.EventHandler(this.GenerarTicketToolStripButton_Click);
-            // 
             // toolStripTabItem4
             // 
             this.toolStripTabItem4.Name = "toolStripTabItem4";
@@ -232,7 +206,7 @@ namespace Examen_Unidad2.Vistas
             this.toolStripTabItem4.Panel.TabIndex = 5;
             this.toolStripTabItem4.Panel.Text = "Detalles";
             this.toolStripTabItem4.Position = 3;
-            this.toolStripTabItem4.Size = new System.Drawing.Size(88, 30);
+            this.toolStripTabItem4.Size = new System.Drawing.Size(78, 23);
             this.toolStripTabItem4.Tag = "4";
             this.toolStripTabItem4.Text = "Detalles";
             // 
@@ -254,15 +228,6 @@ namespace Examen_Unidad2.Vistas
             this.toolStripEx4.Size = new System.Drawing.Size(220, 59);
             this.toolStripEx4.TabIndex = 0;
             // 
-            // DetallesToolStripButton
-            // 
-            this.DetallesToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DetallesToolStripButton.Image")));
-            this.DetallesToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.DetallesToolStripButton.Name = "DetallesToolStripButton";
-            this.DetallesToolStripButton.Size = new System.Drawing.Size(156, 35);
-            this.DetallesToolStripButton.Text = "Lista de tickets";
-            this.DetallesToolStripButton.Click += new System.EventHandler(this.DetallesToolStripButton_Click);
-            // 
             // tabbedMDIManager1
             // 
             this.tabbedMDIManager1.AttachedTo = this;
@@ -274,6 +239,46 @@ namespace Examen_Unidad2.Vistas
             this.tabbedMDIManager1.ShowCloseButton = true;
             this.tabbedMDIManager1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful);
             this.tabbedMDIManager1.ThemeName = "TabRendererOffice2016Colorful";
+            // 
+            // RegistroTiposToolStripButton
+            // 
+            this.RegistroTiposToolStripButton.Image = global::Examen_Unidad2.Properties.Resources.SOPORTE;
+            this.RegistroTiposToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.RegistroTiposToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.RegistroTiposToolStripButton.Name = "RegistroTiposToolStripButton";
+            this.RegistroTiposToolStripButton.Size = new System.Drawing.Size(180, 35);
+            this.RegistroTiposToolStripButton.Text = "Registro de tipos";
+            this.RegistroTiposToolStripButton.Click += new System.EventHandler(this.RegistroTiposToolStripButton_Click);
+            // 
+            // RegistroEstadosToolStripButton
+            // 
+            this.RegistroEstadosToolStripButton.Image = global::Examen_Unidad2.Properties.Resources.Abierto;
+            this.RegistroEstadosToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.RegistroEstadosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.RegistroEstadosToolStripButton.Name = "RegistroEstadosToolStripButton";
+            this.RegistroEstadosToolStripButton.Size = new System.Drawing.Size(196, 35);
+            this.RegistroEstadosToolStripButton.Text = "Registro de estados";
+            this.RegistroEstadosToolStripButton.Click += new System.EventHandler(this.RegistroEstadosToolStripButton_Click);
+            // 
+            // GenerarTicketToolStripButton
+            // 
+            this.GenerarTicketToolStripButton.Image = global::Examen_Unidad2.Properties.Resources.TICKET;
+            this.GenerarTicketToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.GenerarTicketToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.GenerarTicketToolStripButton.Name = "GenerarTicketToolStripButton";
+            this.GenerarTicketToolStripButton.Size = new System.Drawing.Size(156, 35);
+            this.GenerarTicketToolStripButton.Text = "Generar ticket";
+            this.GenerarTicketToolStripButton.Click += new System.EventHandler(this.GenerarTicketToolStripButton_Click);
+            // 
+            // DetallesToolStripButton
+            // 
+            this.DetallesToolStripButton.Image = global::Examen_Unidad2.Properties.Resources.Lista;
+            this.DetallesToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.DetallesToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.DetallesToolStripButton.Name = "DetallesToolStripButton";
+            this.DetallesToolStripButton.Size = new System.Drawing.Size(172, 35);
+            this.DetallesToolStripButton.Text = "Lista de tickets";
+            this.DetallesToolStripButton.Click += new System.EventHandler(this.DetallesToolStripButton_Click);
             // 
             // MenuView
             // 

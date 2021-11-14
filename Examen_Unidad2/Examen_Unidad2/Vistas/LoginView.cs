@@ -18,7 +18,5 @@ namespace Examen_Unidad2.Vistas
             InitializeComponent();
             LoginController controlador = new LoginController(this);
         }
-
-
     }
 }

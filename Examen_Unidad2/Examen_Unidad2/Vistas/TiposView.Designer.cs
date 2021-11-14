@@ -31,6 +31,7 @@ namespace Examen_Unidad2.Vistas
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.CancelarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace Examen_Unidad2.Vistas
             this.TipoSoporteTextBox = new System.Windows.Forms.TextBox();
             this.TiposDataGridView = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TiposDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -60,9 +60,18 @@ namespace Examen_Unidad2.Vistas
             this.groupBox1.Controls.Add(this.TipoSoporteTextBox);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(760, 278);
+            this.groupBox1.Size = new System.Drawing.Size(760, 210);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(96, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(170, 21);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Tipo de soporte:";
             // 
             // CancelarButton
             // 
@@ -116,6 +125,7 @@ namespace Examen_Unidad2.Vistas
             this.IdTextBox.Enabled = false;
             this.IdTextBox.Location = new System.Drawing.Point(278, 22);
             this.IdTextBox.Name = "IdTextBox";
+            this.IdTextBox.ReadOnly = true;
             this.IdTextBox.Size = new System.Drawing.Size(250, 29);
             this.IdTextBox.TabIndex = 3;
             // 
@@ -141,30 +151,22 @@ namespace Examen_Unidad2.Vistas
             this.TiposDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.TiposDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.TiposDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TiposDataGridView.Location = new System.Drawing.Point(12, 296);
+            this.TiposDataGridView.Location = new System.Drawing.Point(12, 228);
             this.TiposDataGridView.Name = "TiposDataGridView";
-            this.TiposDataGridView.Size = new System.Drawing.Size(760, 200);
+            this.TiposDataGridView.Size = new System.Drawing.Size(760, 221);
             this.TiposDataGridView.TabIndex = 1;
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(96, 96);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 21);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Tipo de soporte:";
-            // 
             // TiposView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 504);
+            this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.TiposDataGridView);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

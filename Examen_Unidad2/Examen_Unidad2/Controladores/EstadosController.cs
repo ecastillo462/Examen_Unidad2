@@ -24,6 +24,7 @@ namespace Examen_Unidad2.Controladores
             vista.Load += new EventHandler(Load);
             vista.ModificarButton.Click += new EventHandler(Modificar);
             vista.EliminarButton.Click += new EventHandler(Eliminar);
+            vista.CancelarButton.Click += new EventHandler(Cancelar);
         }
 
         private void Nuevo(object serder, EventArgs e)
@@ -49,9 +50,9 @@ namespace Examen_Unidad2.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
+                    ListarEstados();
                     MessageBox.Show("Nuevo estado registrado exitosamente ", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarEstados();
                 }
                 else
                 {
@@ -67,10 +68,9 @@ namespace Examen_Unidad2.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
-
+                    ListarEstados();
                     MessageBox.Show("Estado modificado Exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarEstados();
                 }
                 else
                 {
@@ -105,12 +105,16 @@ namespace Examen_Unidad2.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
-
+                    ListarEstados();
                     MessageBox.Show("Estado eliminado exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarEstados();
                 }
             }
+        }
+        private void Cancelar(object serder, EventArgs e)
+        {
+            LimpiarControles();
+            DesabilitarControles();
         }
         private void HabilitarControles()
         {
